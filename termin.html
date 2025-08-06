@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termin buchen</title>
+    <link rel="stylesheet" href="./termin.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+
+</head>
+<body>
+    <header>
+        <div class="logo-name">
+            <img src="./images/Screenshot_2025-07-18_124443-removebg-preview.png" alt="Logo">
+            <span>MINA</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Start</a></li>
+                <li><a href="./index.html">Leistungen</a></li>
+                <li><a href="./index.html">Über Uns</a></li>
+                <li><a href="./index.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+   
+    <h1>Termin buchen</h1>
+    <p>Schnell & unkompliziert einen Werkstatt-Termin anfragen</p>
+    
+    <form action="termin-senden.php" method="post" class="formular">
+        <div class="form-row">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required >
+
+        </div>
+        <div class="form-row">
+            <label for="mail">E-Mail:</label>
+            <input type="text" name="mail" id="mail" required>
+
+        </div>
+        <div class="form-row">
+            <label for="telefon">Telefonnummer:</label>
+            <input type="tel" name="telefon" id="telefon" required>
+
+        </div>
+
+        <div class="form-row">
+            <label for="datum">Datum:</label>
+            <input type="date" name="datum" id="datum" required>
+
+        </div>
+        <div  class="form-row">
+            <label for="anliegen">Anliegen:</label>
+            <input type="text" name="anliegen" id="anliegen">
+
+        </div>
+        
+        
+        <button type="submit">Termin anfragen</button>
+    </form>
+     
+</body>
+</html>
